@@ -1,5 +1,5 @@
 import * as React from "react";
-import Wrapper from "../Wrapper";
+import Wrapper from "../components/Wrapper";
 import Nav from "./Nav";
 import Welcome from "./Views/Welcome";
 
