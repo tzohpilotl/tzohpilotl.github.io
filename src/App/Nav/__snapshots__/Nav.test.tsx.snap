@@ -3,7 +3,20 @@
 exports[`Nav component looks as expected 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Nav />,
+  Symbol(enzyme.__unrendered__): <Nav
+    items={
+      Array [
+        Object {
+          "name": "Nav item",
+          "route": "/",
+        },
+        Object {
+          "name": "Nav item",
+          "route": "/about",
+        },
+      ]
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,41 +30,29 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <img
-        className="w2 w3-ns"
-        src={undefined}
-      />,
-      "className": "bb pa3 flex flex-column-reverse items-center flex-row-ns",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "className": "w2 w3-ns",
-        "src": undefined,
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "img",
-    },
-    "type": "nav",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <img
+      "children": Array [
+        <img
           className="w2 w3-ns"
           src={undefined}
         />,
-        "className": "bb pa3 flex flex-column-reverse items-center flex-row-ns",
-      },
-      "ref": null,
-      "rendered": Object {
+        <ol
+          className="list"
+        >
+          <NavElement
+            name="Nav item"
+            route="/"
+          />
+          <NavElement
+            name="Nav item"
+            route="/about"
+          />
+        </ol>,
+      ],
+      "className": "bb pa3 flex flex-column-reverse items-center flex-row-ns",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -63,6 +64,142 @@ ShallowWrapper {
         "rendered": null,
         "type": "img",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <NavElement
+              name="Nav item"
+              route="/"
+            />,
+            <NavElement
+              name="Nav item"
+              route="/about"
+            />,
+          ],
+          "className": "list",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "Nav item-/",
+            "nodeType": "function",
+            "props": Object {
+              "name": "Nav item",
+              "route": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "Nav item-/about",
+            "nodeType": "function",
+            "props": Object {
+              "name": "Nav item",
+              "route": "/about",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "ol",
+      },
+    ],
+    "type": "nav",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            className="w2 w3-ns"
+            src={undefined}
+          />,
+          <ol
+            className="list"
+          >
+            <NavElement
+              name="Nav item"
+              route="/"
+            />
+            <NavElement
+              name="Nav item"
+              route="/about"
+            />
+          </ol>,
+        ],
+        "className": "bb pa3 flex flex-column-reverse items-center flex-row-ns",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "w2 w3-ns",
+            "src": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <NavElement
+                name="Nav item"
+                route="/"
+              />,
+              <NavElement
+                name="Nav item"
+                route="/about"
+              />,
+            ],
+            "className": "list",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "Nav item-/",
+              "nodeType": "function",
+              "props": Object {
+                "name": "Nav item",
+                "route": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "Nav item-/about",
+              "nodeType": "function",
+              "props": Object {
+                "name": "Nav item",
+                "route": "/about",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "ol",
+        },
+      ],
       "type": "nav",
     },
   ],

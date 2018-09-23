@@ -15,59 +15,69 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
-      "children": Array [
-        <Nav />,
+      "children": <div
+        className="flex avenir flex-column"
+      >
+        <Nav
+          items={
+            Array [
+              Object {
+                "name": "Home",
+                "route": "/",
+              },
+              Object {
+                "name": "About",
+                "route": "/about",
+              },
+            ]
+          }
+        />
         <Wrapper>
-          <Welcome />
-        </Wrapper>,
-      ],
-      "className": "flex avenir flex-column",
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/"
+          />
+          <Route
+            component={[Function]}
+            path="/about"
+          />
+        </Wrapper>
+      </div>,
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": <Welcome />,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Nav />,
+          <Nav
+            items={
+              Array [
+                Object {
+                  "name": "Home",
+                  "route": "/",
+                },
+                Object {
+                  "name": "About",
+                  "route": "/about",
+                },
+              ]
+            }
+          />,
           <Wrapper>
-            <Welcome />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/"
+            />
+            <Route
+              component={[Function]}
+              path="/about"
+            />
           </Wrapper>,
         ],
         "className": "flex avenir flex-column",
@@ -78,7 +88,18 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "items": Array [
+              Object {
+                "name": "Home",
+                "route": "/",
+              },
+              Object {
+                "name": "About",
+                "route": "/about",
+              },
+            ],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -88,22 +109,197 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": <Welcome />,
+            "children": Array [
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+              />,
+              <Route
+                component={[Function]}
+                path="/about"
+              />,
+            ],
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/about",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
       ],
       "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="flex avenir flex-column"
+        >
+          <Nav
+            items={
+              Array [
+                Object {
+                  "name": "Home",
+                  "route": "/",
+                },
+                Object {
+                  "name": "About",
+                  "route": "/about",
+                },
+              ]
+            }
+          />
+          <Wrapper>
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/"
+            />
+            <Route
+              component={[Function]}
+              path="/about"
+            />
+          </Wrapper>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Nav
+              items={
+                Array [
+                  Object {
+                    "name": "Home",
+                    "route": "/",
+                  },
+                  Object {
+                    "name": "About",
+                    "route": "/about",
+                  },
+                ]
+              }
+            />,
+            <Wrapper>
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+              />
+              <Route
+                component={[Function]}
+                path="/about"
+              />
+            </Wrapper>,
+          ],
+          "className": "flex avenir flex-column",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "items": Array [
+                Object {
+                  "name": "Home",
+                  "route": "/",
+                },
+                Object {
+                  "name": "About",
+                  "route": "/about",
+                },
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/"
+                />,
+                <Route
+                  component={[Function]}
+                  path="/about"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "path": "/about",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
