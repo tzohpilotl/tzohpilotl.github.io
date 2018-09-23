@@ -1,9 +1,9 @@
 import { shallow } from "enzyme";
 import * as React from "react";
-import Welcome from ".";
+import Home from ".";
 
-describe("Welcome view", () => {
-  const wrapper = shallow(<Welcome />);
+describe("Home view", () => {
+  const wrapper = shallow(<Home />);
   it("renders without crashing", () => {
     expect(wrapper.exists()).toBe(true);
     expect(wrapper).toHaveLength(1);

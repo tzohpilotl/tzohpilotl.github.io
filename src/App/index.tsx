@@ -1,7 +1,7 @@
 import * as React from "react";
 import Wrapper from "../components/Wrapper";
 import Nav from "./Nav";
-import Welcome from "./Views/Welcome";
+import Home from "./Views/Home";
 
 class App extends React.Component {
   public render() {
@@ -9,7 +9,7 @@ class App extends React.Component {
       <div className={"flex avenir flex-column"}>
         <Nav />
         <Wrapper>
-          <Welcome />
+          <Home />
         </Wrapper>
       </div>
     );
