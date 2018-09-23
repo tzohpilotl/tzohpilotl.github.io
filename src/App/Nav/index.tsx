@@ -1,5 +1,5 @@
 import * as React from "react";
-import Fox from "./assets/Fox.gif";
+import Fox from "../../assets/Fox.gif";
 
 const Nav: React.SFC = () => (
   <nav className={"pa3 bb"}>
