@@ -5,7 +5,7 @@ import Nav from ".";
 describe("Nav component", () => {
   const wrapper = shallow(<Nav />);
 
-  it("renders correctly", () => {
+  it("renders without crashing", () => {
     expect(wrapper.exists()).toBe(true);
     expect(wrapper).toHaveLength(1);
   });
