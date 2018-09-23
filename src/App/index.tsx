@@ -1,7 +1,7 @@
 import * as React from "react";
 import Wrapper from "../Wrapper";
 import Nav from "./Nav";
-import Welcome from "./Views";
+import Welcome from "./Views/Welcome";
 
 class App extends React.Component {
   public render() {
