@@ -1,10 +1,12 @@
 import * as React from "react";
+import { H2, H3 } from "../../../components/Headings";
+import UL from "../../../components/Lists/UL";
 
 const About: React.SFC = () => (
   <section className="pa2">
     <article>
       <header>
-        <h2 className="f3 f2-ns mv2">Mario Alejandro Gil Lázaro</h2>
+        <H2>Mario Alejandro Gil Lázaro</H2>
 
         <address className="tr">
           34 Nguyễn Văn Mai, Phường 8, Quận 3, Phường 8, Hồ Chí Minh, 700000,
@@ -19,16 +21,16 @@ const About: React.SFC = () => (
       <main>
         <section>
           <header>
-            <h3 className="f4 f3-ns mv2">Objective</h3>
+            <H3>Objective</H3>
           </header>
           <p>
-            Pursuit a career as a frontend developer and help great teams
-            provide the best user experiencie through their products.
+            To build a career as a frontend developer and help great teams
+            provide the best user experience through their products.
           </p>
         </section>
         <section>
           <header>
-            <h3 className="f4 f3-ns mv2">Education</h3>
+            <H3>Education</H3>
           </header>
           <p>
             <em>Computer Systems Engineering</em>
@@ -37,9 +39,9 @@ const About: React.SFC = () => (
         </section>
         <section>
           <header>
-            <h3 className="f4 f3-ns mv2">Skills</h3>
+            <H3>Skills</H3>
           </header>
-          <ul className="flex flex-column list ph3 pv2 ma0">
+          <UL>
             <li>
               <strong>
                 <em>Programming Languages:</em>
@@ -76,11 +78,11 @@ const About: React.SFC = () => (
               </strong>
               Good reading skills, friendly, self-learning.
             </li>
-          </ul>
+          </UL>
         </section>
         <section>
           <header>
-            <h3 className="f4 f3-ns mv2">Experience</h3>
+            <H3>Experience</H3>
           </header>
           <p>
             <strong>

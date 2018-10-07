@@ -1,6 +1,7 @@
 import classnames from "classnames";
 import * as React from "react";
 import Fox from "../../assets/Fox.gif";
+import UL from "../../components/Lists/UL";
 import NavItem, { INavItem } from "./Item";
 
 interface INav {
@@ -23,7 +24,9 @@ const Nav: React.SFC<INav> = ({ items }) => {
   return (
     <nav className={classes}>
       <img className={"w2 w3-ns pa2"} src={Fox} />
-      <ul className="flex flex-column flex-row-ns list pa2 ma0">{navItems}</ul>
+      <UL horizontal={true} responsive={true}>
+        {navItems}
+      </UL>
     </nav>
   );
 };

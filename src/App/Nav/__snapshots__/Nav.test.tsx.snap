@@ -32,11 +32,12 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <img
-          className="w2 w3-ns"
+          className="w2 w3-ns pa2"
           src={undefined}
         />,
-        <ol
-          className="list"
+        <UL
+          horizontal={true}
+          responsive={true}
         >
           <NavElement
             name="Nav item"
@@ -46,7 +47,7 @@ ShallowWrapper {
             name="Nav item"
             route="/about"
           />
-        </ol>,
+        </UL>,
       ],
       "className": "bb pa3 flex flex-column-reverse items-center flex-row-ns",
     },
@@ -57,7 +58,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "w2 w3-ns",
+          "className": "w2 w3-ns pa2",
           "src": undefined,
         },
         "ref": null,
@@ -67,7 +68,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "function",
         "props": Object {
           "children": Array [
             <NavElement
@@ -79,7 +80,8 @@ ShallowWrapper {
               route="/about"
             />,
           ],
-          "className": "list",
+          "horizontal": true,
+          "responsive": true,
         },
         "ref": null,
         "rendered": Array [
@@ -108,7 +110,7 @@ ShallowWrapper {
             "type": [Function],
           },
         ],
-        "type": "ol",
+        "type": [Function],
       },
     ],
     "type": "nav",
@@ -121,11 +123,12 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <img
-            className="w2 w3-ns"
+            className="w2 w3-ns pa2"
             src={undefined}
           />,
-          <ol
-            className="list"
+          <UL
+            horizontal={true}
+            responsive={true}
           >
             <NavElement
               name="Nav item"
@@ -135,7 +138,7 @@ ShallowWrapper {
               name="Nav item"
               route="/about"
             />
-          </ol>,
+          </UL>,
         ],
         "className": "bb pa3 flex flex-column-reverse items-center flex-row-ns",
       },
@@ -146,7 +149,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "w2 w3-ns",
+            "className": "w2 w3-ns pa2",
             "src": undefined,
           },
           "ref": null,
@@ -156,7 +159,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "function",
           "props": Object {
             "children": Array [
               <NavElement
@@ -168,7 +171,8 @@ ShallowWrapper {
                 route="/about"
               />,
             ],
-            "className": "list",
+            "horizontal": true,
+            "responsive": true,
           },
           "ref": null,
           "rendered": Array [
@@ -197,7 +201,7 @@ ShallowWrapper {
               "type": [Function],
             },
           ],
-          "type": "ol",
+          "type": [Function],
         },
       ],
       "type": "nav",
