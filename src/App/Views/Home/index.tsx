@@ -1,8 +1,9 @@
 import * as React from "react";
+import { H1 } from "../../../components/Headings";
 
 const Welcome: React.SFC = () => (
   <section className="pa2">
-    <h1 className="f3 f2-ns mv2">Welcome</h1>
+    <H1>Welcome</H1>
   </section>
 );
 
