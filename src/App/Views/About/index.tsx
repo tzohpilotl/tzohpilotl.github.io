@@ -76,19 +76,24 @@ const About: React.SFC = () => (
             <li className="pa1">
               <p className="b mv1">
                 Software Engineer @ Wize
-                <span className="light-red">line</span> (Jan 2017 - Present)
+                <span className="light-red mr1">line</span>
+                <small>(Jan 2017 - Present)</small>
               </p>
               Developing and maintaining the company's Wordpress website.
             </li>
             <li className="pa1">
               <p className="b mv1">
                 Software Engineering Trainee @ Wize
-                <span className="light-red">line</span> (Aug 2017 - Jan 2017)
+                <span className="light-red mr1">line</span>
+                <small>(Aug 2017 - Jan 2017)</small>
               </p>
               Developing and maintaining the company's Wordpress website.
             </li>
             <li className="pa1">
-              <p className="b mv1">Full stack web developer (2017)</p>
+              <p className="b mv1">
+                Full stack web developer
+                <small className="ml1">(2017)</small>
+              </p>
               Account management system for the local government office.
             </li>
           </UL>
