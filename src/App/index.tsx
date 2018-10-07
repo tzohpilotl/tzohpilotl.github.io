@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Redirect, Route } from "react-router-dom";
 import Wrapper from "../components/Wrapper";
 import navItems from "./config/navItems";
 import Nav from "./Nav";
@@ -13,8 +13,9 @@ class App extends React.Component {
         <div className={"flex avenir flex-column"}>
           <Nav items={navItems} />
           <Wrapper>
-            <Route exact={true} path="/" component={Home} />
+            <Redirect to="/about" />
             <Route path="/about" component={About} />
+            <Route exact={true} path="/" component={Home} />
           </Wrapper>
         </div>
       </Router>
