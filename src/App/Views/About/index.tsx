@@ -33,8 +33,8 @@ const About: React.SFC = () => (
             <H3>Education</H3>
           </header>
           <p>
-            <em>Computer Systems Engineering</em>
-            Universidad de Guanajuato.
+            <span className="mr1 i">Computer Systems Engineering</span>
+            at Universidad de Guanajuato.
           </p>
         </section>
         <section>
@@ -42,40 +42,28 @@ const About: React.SFC = () => (
             <H3>Skills</H3>
           </header>
           <UL>
-            <li>
-              <strong>
-                <em>Programming Languages:</em>
-              </strong>
+            <li className="pa1">
+              <span className="b mr1">Programming Languages:</span>
               Javascript, Python, C.
             </li>
-            <li>
-              <strong>
-                <em>Misc. Languages:</em>
-              </strong>
+            <li className="pa1">
+              <span className="b mr1">Misc. Languages:</span>
               HTML5, CSS, SASS.
             </li>
-            <li>
-              <strong>
-                <em>Natural Languages:</em>
-              </strong>
+            <li className="pa1">
+              <span className="b mr1">Natural Languages:</span>
               Spanish, English (80%).
             </li>
-            <li>
-              <strong>
-                <em>Frameworks:</em>
-              </strong>
+            <li className="pa1">
+              <span className="b mr1">Frameworks:</span>
               Angular, Express, Mocha.
             </li>
-            <li>
-              <strong>
-                <em>Software:</em>
-              </strong>
+            <li className="pa1">
+              <span className="b mr1">Software:</span>
               Git+Github, Mithril, PostgreSQL, Knex.
             </li>
-            <li>
-              <strong>
-                <em>Soft Skills:</em>
-              </strong>
+            <li className="pa1">
+              <span className="b mr1">Soft Skills:</span>
               Good reading skills, friendly, self-learning.
             </li>
           </UL>
@@ -84,13 +72,26 @@ const About: React.SFC = () => (
           <header>
             <H3>Experience</H3>
           </header>
-          <p>
-            <strong>
-              <em>Full stack web developer</em>
-            </strong>
-            <span>(current)</span>I am working in a freelance team on an account
-            management system for the local government office.
-          </p>
+          <UL>
+            <li className="pa1">
+              <p className="b mv1">
+                Software Engineer @ Wize
+                <span className="light-red">line</span> (Jan 2017 - Present)
+              </p>
+              Developing and maintaining the company's Wordpress website.
+            </li>
+            <li className="pa1">
+              <p className="b mv1">
+                Software Engineering Trainee @ Wize
+                <span className="light-red">line</span> (Aug 2017 - Jan 2017)
+              </p>
+              Developing and maintaining the company's Wordpress website.
+            </li>
+            <li className="pa1">
+              <p className="b mv1">Full stack web developer (2017)</p>
+              Account management system for the local government office.
+            </li>
+          </UL>
         </section>
       </main>
     </article>
