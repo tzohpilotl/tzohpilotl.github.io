@@ -44,27 +44,28 @@ const About: React.SFC = () => (
           <UL>
             <li className="pa1">
               <span className="b mr1">Programming Languages:</span>
-              Javascript, Python, C.
+              Javascript, Typescript, Python.
             </li>
             <li className="pa1">
               <span className="b mr1">Misc. Languages:</span>
-              HTML5, CSS, SASS.
+              HTML5, CSS.
             </li>
             <li className="pa1">
               <span className="b mr1">Natural Languages:</span>
-              Spanish, English (80%).
+              Spanish, English.
             </li>
             <li className="pa1">
-              <span className="b mr1">Frameworks:</span>
-              Angular, Express, Mocha.
+              <span className="b mr1">Frameworks and libraries:</span>
+              React, Redux, Express, Mithril, Knex, Jest.
             </li>
             <li className="pa1">
               <span className="b mr1">Software:</span>
-              Git+Github, Mithril, PostgreSQL, Knex.
+              Git, SQL.
             </li>
             <li className="pa1">
               <span className="b mr1">Soft Skills:</span>
-              Good reading skills, friendly, self-learning.
+              Good reading skills, discussion sparker, self-learning, tend to
+              spread knowledge with peers.
             </li>
           </UL>
         </section>
@@ -79,7 +80,7 @@ const About: React.SFC = () => (
                 <span className="light-red mr1">line</span>
                 <small>(Jan 2017 - Present)</small>
               </p>
-              Developing and maintaining the company's Wordpress website.
+              Frontend developer focused on React.
             </li>
             <li className="pa1">
               <p className="b mv1">

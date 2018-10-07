@@ -21,11 +21,13 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <Link
+        className="pa1 link black bg-animate hover-bg-gold"
         replace={false}
         to="/"
       >
         Nav element
       </Link>,
+      "className": "pa1 f4",
     },
     "ref": null,
     "rendered": Object {
@@ -34,6 +36,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": "Nav element",
+        "className": "pa1 link black bg-animate hover-bg-gold",
         "replace": false,
         "to": "/",
       },
@@ -50,11 +53,13 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <Link
+          className="pa1 link black bg-animate hover-bg-gold"
           replace={false}
           to="/"
         >
           Nav element
         </Link>,
+        "className": "pa1 f4",
       },
       "ref": null,
       "rendered": Object {
@@ -63,6 +68,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": "Nav element",
+          "className": "pa1 link black bg-animate hover-bg-gold",
           "replace": false,
           "to": "/",
         },
