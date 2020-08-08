@@ -13,7 +13,7 @@ const UL: React.SFC<IUL> = ({ horizontal, responsive, ...rest }) => {
     "flex-row-ns": responsive,
     list: true,
     ma0: true,
-    pa2: true
+    pa0: true,
   });
   return <ul className={classes} {...rest} />;
 };

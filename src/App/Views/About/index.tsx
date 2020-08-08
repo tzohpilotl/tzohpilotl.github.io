@@ -1,104 +1,134 @@
 import * as React from "react";
-import { H2, H3 } from "../../../components/Headings";
 import UL from "../../../components/Lists/UL";
 
+const Header = () => (
+  <header className="tc ph4 pv2">
+    <h1 className="f3 f2-m f1-l fw3 black-90 mv3">Mario Alejandro Gil Lázaro</h1>
+    <h2 className="f5 f4-m f3-l fw3 mt0 lh-copy">
+      <a className="black-90 bg-animate hover-bg-gold link" href="mailto:mariogillazaro@gmail.com">
+        mariogillazaro@gmail.com
+      </a>
+    </h2>
+  </header>
+);
+
+const SectionHeading = (props: any) => <h3 className="f5 f4-m f3-l fw3 lh-copy mb0" {...props} />;
+
+const Emphasis = (props: any) => <span className="mr1 i" {...props} />;
+
+const Paragraph = (props: any) => <p className="fw3 f5 lh-copy measure" {...props} />;
+
+const Objective = () => (
+  <section>
+    <header>
+      <SectionHeading>Objective</SectionHeading>
+    </header>
+    <Paragraph>
+      To build a career as a frontend developer and help great teams provide the best user
+      experience through their products.
+    </Paragraph>
+  </section>
+);
+
+const Education = () => (
+  <section>
+    <header>
+      <SectionHeading>Education</SectionHeading>
+    </header>
+    <Paragraph>
+      <span className="mr1 i">Computer Systems Engineering</span>
+      at Universidad de Guanajuato.
+    </Paragraph>
+  </section>
+);
+
+const Skills = () => (
+  <section>
+    <header>
+      <SectionHeading>Skills</SectionHeading>
+    </header>
+    <UL>
+      <li>
+        <Paragraph>
+          <Emphasis>Programming Languages:</Emphasis>
+          Javascript, Typescript, Python.
+        </Paragraph>
+      </li>
+      <li>
+        <Paragraph>
+          <Emphasis>Misc. Languages:</Emphasis>
+          HTML5, CSS.
+        </Paragraph>
+      </li>
+      <li>
+        <Paragraph>
+          <Emphasis>Natural Languages:</Emphasis>
+          Spanish, English.
+        </Paragraph>
+      </li>
+      <li>
+        <Paragraph>
+          <Emphasis>Frameworks and libraries:</Emphasis>
+          React, Redux, Express, Mithril, Knex, Jest.
+        </Paragraph>
+      </li>
+      <li>
+        <Paragraph>
+          <Emphasis>Software:</Emphasis>
+          Git, SQL.
+        </Paragraph>
+      </li>
+      <li>
+        <Paragraph>
+          <Emphasis>Soft Skills:</Emphasis>
+          Good reading skills, discussion sparker, self-learning, tend to spread knowledge with
+          peers.
+        </Paragraph>
+      </li>
+    </UL>
+  </section>
+);
+
+const Experience = () => (
+  <section>
+    <header>
+      <SectionHeading>Experience</SectionHeading>
+    </header>
+    <UL>
+      <li>
+        <Paragraph>
+          <span className="i">Software Engineer @ Wizeline</span>
+          <small className="ml1">(Jan 2017 - Present)</small>
+        </Paragraph>
+        <Paragraph>Frontend developer focused on React.</Paragraph>
+      </li>
+      <li>
+        <Paragraph>
+          <span className="i">Software Engineering Trainee @ Wizeline</span>
+          <small className="ml1">(Aug 2017 - Jan 2017)</small>
+        </Paragraph>
+        <Paragraph>Developing and maintaining the company&apos;s Wordpress website.</Paragraph>
+      </li>
+      <li>
+        <Paragraph>
+          <span className="i">Full stack web developer</span>
+          <small className="ml1">(2017)</small>
+        </Paragraph>
+        <Paragraph>Account management system for the local government office.</Paragraph>
+      </li>
+    </UL>
+  </section>
+);
+
 const About: React.SFC = () => (
-  <section className="pa2">
+  <section className="mw9 mw7-ns center bg-white pa3 ph5-ns">
     <article>
-      <header>
-        <H2>Mario Alejandro Gil Lázaro</H2>
-
-        <address className="tr">
-          34 Nguyễn Văn Mai, Phường 8, Quận 3, Phường 8, Hồ Chí Minh, 700000,
-          Vietnam.
-          <br />
-          <a className="link dim gold" href="mailto:mariogillazaro@gmail.com">
-            mariogillazaro@gmail.com
-          </a>
-        </address>
-      </header>
-
+      <Header />
       <main>
-        <section>
-          <header>
-            <H3>Objective</H3>
-          </header>
-          <p>
-            To build a career as a frontend developer and help great teams
-            provide the best user experience through their products.
-          </p>
-        </section>
-        <section>
-          <header>
-            <H3>Education</H3>
-          </header>
-          <p>
-            <span className="mr1 i">Computer Systems Engineering</span>
-            at Universidad de Guanajuato.
-          </p>
-        </section>
-        <section>
-          <header>
-            <H3>Skills</H3>
-          </header>
-          <UL>
-            <li className="pa1">
-              <span className="b mr1">Programming Languages:</span>
-              Javascript, Typescript, Python.
-            </li>
-            <li className="pa1">
-              <span className="b mr1">Misc. Languages:</span>
-              HTML5, CSS.
-            </li>
-            <li className="pa1">
-              <span className="b mr1">Natural Languages:</span>
-              Spanish, English.
-            </li>
-            <li className="pa1">
-              <span className="b mr1">Frameworks and libraries:</span>
-              React, Redux, Express, Mithril, Knex, Jest.
-            </li>
-            <li className="pa1">
-              <span className="b mr1">Software:</span>
-              Git, SQL.
-            </li>
-            <li className="pa1">
-              <span className="b mr1">Soft Skills:</span>
-              Good reading skills, discussion sparker, self-learning, tend to
-              spread knowledge with peers.
-            </li>
-          </UL>
-        </section>
-        <section>
-          <header>
-            <H3>Experience</H3>
-          </header>
-          <UL>
-            <li className="pa1">
-              <p className="b mv1">
-                Software Engineer @ Wize
-                <span className="light-red mr1">line</span>
-                <small>(Jan 2017 - Present)</small>
-              </p>
-              Frontend developer focused on React.
-            </li>
-            <li className="pa1">
-              <p className="b mv1">
-                Software Engineering Trainee @ Wize
-                <span className="light-red mr1">line</span>
-                <small>(Aug 2017 - Jan 2017)</small>
-              </p>
-              Developing and maintaining the company's Wordpress website.
-            </li>
-            <li className="pa1">
-              <p className="b mv1">
-                Full stack web developer
-                <small className="ml1">(2017)</small>
-              </p>
-              Account management system for the local government office.
-            </li>
-          </UL>
-        </section>
+        <Objective />
+        <Education />
+        <Skills />
+        <Experience />
       </main>
     </article>
   </section>
