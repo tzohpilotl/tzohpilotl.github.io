@@ -1,25 +1,31 @@
 import * as React from "react";
-import UL from "../../../components/Lists/UL";
 
 const Header = () => (
-  <header className="tc ph4 pv2">
-    <h1 className="f3 f2-m f1-l fw3 black-90 mv3">Mario Alejandro Gil Lázaro</h1>
-    <h2 className="f5 f4-m f3-l fw3 mt0 lh-copy">
-      <a className="black-90 bg-animate hover-bg-gold link" href="mailto:mariogillazaro@gmail.com">
-        mariogillazaro@gmail.com
-      </a>
-    </h2>
-  </header>
+  <section className="bg-light-gray pa5 h-100">
+    <header>
+      <h1 className="f5 f4-m f3-l tl b ma0">Mario Alejandro Gil Lázaro</h1>
+      <h2 className="f5 fw4 lh-copy">
+        <a
+          className="black bg-animate hover-bg-washed-red link"
+          href="mailto:mariogillazaro@gmail.com"
+        >
+          Contact
+        </a>
+      </h2>
+    </header>
+  </section>
 );
 
-const SectionHeading = (props: any) => <h3 className="f5 f4-m f3-l fw3 lh-copy mb0" {...props} />;
+const SectionHeading = (props: any) => <h3 className="f5 f4-m f3-l b lh-copy ma0" {...props} />;
 
-const Emphasis = (props: any) => <span className="mr1 i" {...props} />;
+const Emphasis = (props: any) => <span className="i" {...props} />;
 
-const Paragraph = (props: any) => <p className="fw3 f5 lh-copy measure" {...props} />;
+const Paragraph = (props: any) => (
+  <p className="fw4 f5 lh-copy measure" style={{ maxWidth: "240px" }} {...props} />
+);
 
 const Objective = () => (
-  <section>
+  <section className="bg-light-green pa5 h-100">
     <header>
       <SectionHeading>Objective</SectionHeading>
     </header>
@@ -31,7 +37,7 @@ const Objective = () => (
 );
 
 const Education = () => (
-  <section>
+  <section className="bg-yellow pa5 h-100">
     <header>
       <SectionHeading>Education</SectionHeading>
     </header>
@@ -43,58 +49,58 @@ const Education = () => (
 );
 
 const Skills = () => (
-  <section>
+  <section className="bg-light-pink pa5 h-100">
     <header>
       <SectionHeading>Skills</SectionHeading>
     </header>
-    <UL>
-      <li>
+    <ul className="ma0 pa0 list flex flex-wrap justify-between">
+      <li className="flex w-40">
         <Paragraph>
-          <Emphasis>Programming Languages:</Emphasis>
+          <Emphasis>Programming Languages: </Emphasis>
           Javascript, Typescript, Python.
         </Paragraph>
       </li>
-      <li>
+      <li className="flex w-40">
         <Paragraph>
-          <Emphasis>Misc. Languages:</Emphasis>
+          <Emphasis>Misc. Languages: </Emphasis>
           HTML5, CSS.
         </Paragraph>
       </li>
-      <li>
+      <li className="flex w-40">
         <Paragraph>
-          <Emphasis>Natural Languages:</Emphasis>
+          <Emphasis>Natural Languages: </Emphasis>
           Spanish, English.
         </Paragraph>
       </li>
-      <li>
+      <li className="flex w-40">
         <Paragraph>
-          <Emphasis>Frameworks and libraries:</Emphasis>
+          <Emphasis>Frameworks and libraries: </Emphasis>
           React, Redux, Express, Mithril, Knex, Jest.
         </Paragraph>
       </li>
-      <li>
+      <li className="flex w-40">
         <Paragraph>
-          <Emphasis>Software:</Emphasis>
+          <Emphasis>Software: </Emphasis>
           Git, SQL.
         </Paragraph>
       </li>
-      <li>
+      <li className="flex w-40">
         <Paragraph>
-          <Emphasis>Soft Skills:</Emphasis>
+          <Emphasis>Soft Skills: </Emphasis>
           Good reading skills, discussion sparker, self-learning, tend to spread knowledge with
           peers.
         </Paragraph>
       </li>
-    </UL>
+    </ul>
   </section>
 );
 
 const Experience = () => (
-  <section>
+  <section className="bg-light-blue pa5 h-100">
     <header>
       <SectionHeading>Experience</SectionHeading>
     </header>
-    <UL>
+    <ul className="ma0 pa0 list flex flex-wrap justify-between">
       <li>
         <Paragraph>
           <span className="i">Software Engineer @ Wizeline</span>
@@ -116,19 +122,30 @@ const Experience = () => (
         </Paragraph>
         <Paragraph>Account management system for the local government office.</Paragraph>
       </li>
-    </UL>
+    </ul>
   </section>
 );
 
 const About: React.SFC = () => (
-  <section className="mw9 mw7-ns center bg-white pa3 ph5-ns">
+  <section>
     <article>
-      <Header />
-      <main>
-        <Objective />
-        <Education />
-        <Skills />
-        <Experience />
+      <main className="flex flex-wrap">
+        {/* <main className="cf"> */}
+        <div className="flex w-40 bg-light-gray">
+          <Header />
+        </div>
+        <div className="flex w-30 bg-light-green">
+          <Objective />
+        </div>
+        <div className="flex w-30 bg-yellow">
+          <Education />
+        </div>
+        <div className="flex w-50 bg-light-blue">
+          <Experience />
+        </div>
+        <div className="flex w-50 bg-light-pink">
+          <Skills />
+        </div>
       </main>
     </article>
   </section>
