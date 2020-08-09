@@ -1,22 +1,40 @@
 import * as React from "react";
 
 const Header = () => (
-  <section className="bg-light-gray pa5 h-100">
-    <header>
-      <h1 className="f5 f4-m f3-l tl b ma0">Mario Alejandro Gil Lázaro</h1>
-      <h2 className="f5 fw4 lh-copy">
-        <a
-          className="black bg-animate hover-bg-washed-red link"
-          href="mailto:mariogillazaro@gmail.com"
-        >
-          Contact
-        </a>
-      </h2>
+  <section className="bg-light-gray pa4 pa5-l h-100">
+    <header className="flex">
+      <h1 className="f2-m f1-l tl b ma0 tracked-tight">Mario Alejandro Gil Lázaro</h1>
+      <div className="flex flex-column">
+        <h2 className="f6 f5-l fw4 lh-copy ma0 mb2">
+          <a
+            className="black bg-animate hover-bg-light-green link ttu tracked"
+            href="mailto:mariogillazaro@gmail.com"
+          >
+            Contact
+          </a>
+        </h2>
+        <h2 className="f6 f5-l fw4 lh-copy ma0 mb2">
+          <a className="black bg-animate hover-bg-light-pink link ttu tracked" href="#">
+            Instagram
+          </a>
+        </h2>
+        <h2 className="f6 f5-l fw4 lh-copy ma0 mb2">
+          <a className="black bg-animate hover-bg-light-blue link ttu tracked" href="#">
+            Linkedin
+          </a>
+        </h2>
+      </div>
     </header>
   </section>
 );
 
-const SectionHeading = (props: any) => <h3 className="f5 f4-m f3-l b lh-copy ma0" {...props} />;
+const SectionHeading = ({ shadow, ...rest }: any) => (
+  <h3
+    className="f5 f4-m f3-l b lh-copy ma0 mb2 tracked ttu"
+    style={{ textShadow: `${shadow} 2px -2px` }}
+    {...rest}
+  />
+);
 
 const Emphasis = (props: any) => <span className="i" {...props} />;
 
@@ -25,9 +43,9 @@ const Paragraph = (props: any) => (
 );
 
 const Objective = () => (
-  <section className="bg-light-green pa5 h-100">
+  <section className="bg-light-green pa4 pa5-l h-100">
     <header>
-      <SectionHeading>Objective</SectionHeading>
+      <SectionHeading shadow="#FFA3D7">Objective</SectionHeading>
     </header>
     <Paragraph>
       To build a career as a frontend developer and help great teams provide the best user
@@ -37,9 +55,9 @@ const Objective = () => (
 );
 
 const Education = () => (
-  <section className="bg-yellow pa5 h-100">
+  <section className="bg-yellow pa4 pa5-l h-100">
     <header>
-      <SectionHeading>Education</SectionHeading>
+      <SectionHeading shadow="#96CCFF">Education</SectionHeading>
     </header>
     <Paragraph>
       <span className="mr1 i">Computer Systems Engineering</span>
@@ -49,9 +67,9 @@ const Education = () => (
 );
 
 const Skills = () => (
-  <section className="bg-light-pink pa5 h-100">
+  <section className="bg-light-pink pa4 pa5-l h-100">
     <header>
-      <SectionHeading>Skills</SectionHeading>
+      <SectionHeading shadow="#9EEBCF">Skills</SectionHeading>
     </header>
     <ul className="ma0 pa0 list flex flex-wrap justify-between">
       <li className="flex w-40">
@@ -96,9 +114,9 @@ const Skills = () => (
 );
 
 const Experience = () => (
-  <section className="bg-light-blue pa5 h-100">
+  <section className="bg-light-blue pa4 pa5-l h-100">
     <header>
-      <SectionHeading>Experience</SectionHeading>
+      <SectionHeading shadow="#FFD700">Experience</SectionHeading>
     </header>
     <ul className="ma0 pa0 list flex flex-wrap justify-between">
       <li>
@@ -130,20 +148,19 @@ const About: React.SFC = () => (
   <section>
     <article>
       <main className="flex flex-wrap">
-        {/* <main className="cf"> */}
-        <div className="flex w-40 bg-light-gray">
+        <div className="flex w-100 w-40-l bg-light-gray">
           <Header />
         </div>
-        <div className="flex w-30 bg-light-green">
+        <div className="flex w-100 w-30-l bg-light-green">
           <Objective />
         </div>
-        <div className="flex w-30 bg-yellow">
+        <div className="flex w-100 w-30-l bg-yellow">
           <Education />
         </div>
-        <div className="flex w-50 bg-light-blue">
+        <div className="flex w-100 w-50-l bg-light-blue">
           <Experience />
         </div>
-        <div className="flex w-50 bg-light-pink">
+        <div className="flex w-100 w-50-l bg-light-pink">
           <Skills />
         </div>
       </main>
