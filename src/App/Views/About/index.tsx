@@ -14,12 +14,18 @@ const Header = () => (
           </a>
         </h2>
         <h2 className="f6 f5-l fw4 lh-copy ma0 mb2">
-          <a className="black bg-animate hover-bg-light-pink link ttu tracked" href="#">
+          <a
+            className="black bg-animate hover-bg-light-pink link ttu tracked"
+            href="https://www.instagram.com/xr4ms/"
+          >
             Instagram
           </a>
         </h2>
         <h2 className="f6 f5-l fw4 lh-copy ma0 mb2">
-          <a className="black bg-animate hover-bg-light-blue link ttu tracked" href="#">
+          <a
+            className="black bg-animate hover-bg-light-blue link ttu tracked"
+            href="https://www.linkedin.com/in/xr4m/"
+          >
             Linkedin
           </a>
         </h2>
