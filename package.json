@@ -17,7 +17,8 @@
     "eject": "react-scripts-ts eject",
     "css": "tachyons src/css/app.css > src/index.css --minify",
     "prestart": "npm run css",
-    "prebuild": "npm run css"
+    "prebuild": "npm run css",
+    "gh-pages": "yarn build && rm -rf gh-pages/* && mv build/* gh-pages && cd gh-pages && git add . && git commit -m 'Automated publish' && git push"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.6",
